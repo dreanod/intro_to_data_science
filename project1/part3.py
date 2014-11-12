@@ -66,7 +66,11 @@ def custom_heuristic(file_path):
     df = pandas.read_csv(file_path)
     for passenger_index, passenger in df.iterrows():
         passenger_id = passenger['PassengerId']
-        if passenger['Sex'] == 'female':
+        if passenger['Sex'] == 'female' and passenger['Parch'] > 2:
+            predictions[passenger_id] = 0
+        elif passenger['Sex'] == 'female' and passenger['SibSp'] > 2:
+            predictions[passenger_id] = 0
+        elif passenger['Sex'] == 'female':
             predictions[passenger_id] = 1
         elif passenger['Age'] <= 6:
             predictions[passenger_id] = 1
