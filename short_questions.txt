@@ -1,0 +1,40 @@
+Analyzing the NYC Subway Dataset
+Short Questions
+Overview
+
+For Part 1 of the project, you should have completed the questions in Problem Sets 2, 3, 4, and 5 in the Introduction to Data Science course.
+For part 2 of the project, please use this document as a template and answer the following questions to explain your reasoning and conclusion behind your work in the problem sets.
+Section 1. Statistical Test
+
+Which statistical test did you use?
+Why is this statistical test appropriate or applicable to the dataset?
+What results did you get from this statistical test?
+What is the significance of these results?
+Section 2. Linear Regression
+
+What approach did you use to compute the coefficients theta and produce prediction in your regression model:
+Gradient descent (as implemented in exercise 3.5)
+OLS using Statsmodels
+Or something different?
+What features did you use in your model?
+Why are these features appropriate?
+What is your model’s R2 (coefficients of determination) value?
+What does this R2 value mean for the goodness of fit for your regression model?
+Section 3. Visualization
+
+Please include two visualizations that show the relationships between two or more variables in the NYC subway data. You should feel free to implement something that we discussed in class (e.g., scatterplots, line plots, or histograms) or attempt to implement something more advanced if you'd like.
+One visualization should be two histograms of ENTRIESn_hourly for rainy days and non-rainy days
+One visualization can be more freeform, some suggestions are:
+Ridership by time-of-day or day-of-week
+How ridership varies by subway station
+Which stations have more exits or entries at different times of day
+Section 4. Conclusion
+
+From your analysis and interpretation of the data, do more people ride
+the NYC subway when it is raining versus when it is not raining?  
+What analyses lead you to this conclusion?
+
+Section 5. Reflection
+
+Please discuss potential shortcomings of the dataset and the methods 
+of your analysis.
