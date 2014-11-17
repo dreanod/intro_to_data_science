@@ -39,10 +39,15 @@ def fix_turnstile_data(filenames):
             for row in reader:
                 prefix = row[:3]
                 rest = row[3:]
-                while len(rest > 0):
+                while len(rest) > 0:
                     suffix = rest[:5]
                     out.append(prefix + suffix)
                     rest = rest[5:]
-                print out
+
+        out_name = 'updated_' + name 
+        with open(out_name, 'wb') as f:
+            writer = csv.writer(f)
+            writer.writerows(out)
 
 
+fix_turnstile_data(['turnstile_110528.txt'])
